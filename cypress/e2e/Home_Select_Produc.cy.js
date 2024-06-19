@@ -14,10 +14,8 @@ it('Seleccionamos un producto', ()=>{
   //Ingresa a la página web
   cy.visit('https://demoblaze.com/index.html')
   
-  //Click en SignUp
-  //cy.get('a[data-target="#signInModal"]').click()
-
-  HomeMetodos.clickEnProducto('Samsung galaxy s6')
+  
+  HomeMetodos.clickEnProducto(HomeData.productos.Samsunggalaxys6)
   
   cy.wait(5000)
   

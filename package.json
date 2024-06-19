@@ -9,10 +9,10 @@
     "allure:report": "allure generate allure-results -o allure-report --clean ",
     "allure:serve": "allure serve",
     "abrir-report": "allure open",
-    "limpiar-reporte": "rimraf ./allure-report && rimraf 0./allure-results",
+    "limpiar-reporte": "rimraf ./allure-report && rimraf ./allure-results",
     "ejecutar-pruebas": "cypress run --headed --env allure=true",
     "generar-reporte": "allure generate allure-results -o allure-report --clean",
-    "test": "npm run limpiar-reporte && npm run ejecutar-pruebas; npm run generar-reporte && npm run abrir-report"
+    "test": "npm run limpiar-reporte && npm run ejecutar-pruebas && npm run generar-reporte && npm run abrir-report"
   },
   "keywords": [],
   "author": "",
@@ -21,6 +21,7 @@
     "@shelex/cypress-allure-plugin": "^2.40.2",
     "allure-commandline": "^2.29.0",
     "allure-cypress": "^3.0.0-beta.3",
-    "cypress": "^12.13.0"
+    "cypress": "^12.13.0",
+    "rimraf": "^5.0.7"
   }
 }

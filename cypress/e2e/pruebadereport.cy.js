@@ -1,8 +1,11 @@
+import { LoginMetod } from "./Login/Login.metodos" //Se importa la clase de LoginMetod
+
+
 
 describe('Inicio página login', () => {
   
 
-    it('Pasos user pws', ()=>{
+    it('user pws', ()=>{
       cy.viewport(1400, 1100)
      
       cy.visit('https://demoblaze.com/index.html')
@@ -23,7 +26,8 @@ describe('Inicio página login', () => {
     
     
       // llamamos al metodo que contiene el usuario pws y click, ingresamos los datos de cada campo
-      //LoginMetod.login('demothon', 'Admin123')
+      LoginMetod.login('demothon', 'Admin123')
+      
       
     
     

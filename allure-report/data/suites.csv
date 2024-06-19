@@ -1,2 +1,5 @@
 "Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
-"passed","Tue Jun 18 10:02:47 CST 2024","Tue Jun 18 10:02:48 CST 2024","1210","","Inicio página login","","","","Pasos user pws",""
+"passed","Wed Jun 19 14:13:06 CST 2024","Wed Jun 19 14:13:16 CST 2024","10302","","Inicio página login","","","","user pws",""
+"passed","Wed Jun 19 14:12:43 CST 2024","Wed Jun 19 14:12:53 CST 2024","10540","","Inicio página login","","","","user pws VALIDO",""
+"passed","Wed Jun 19 14:12:32 CST 2024","Wed Jun 19 14:12:43 CST 2024","10144","","Inicio página login","","","","user pws INVALIDO",""
+"passed","Wed Jun 19 14:13:25 CST 2024","Wed Jun 19 14:13:27 CST 2024","1734","","Crea usuario en SignUp","","","","Crea usuario contraseña",""

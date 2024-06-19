@@ -8,7 +8,7 @@ import { LoginData } from "./Login/Login.data"
 describe('Inicio página login', () => {
   
 
-it('Pasos user pws INVALIDO', ()=>{
+it('user pws INVALIDO', ()=>{
   cy.viewport(1400, 1100)
  
   cy.visit('https://demoblaze.com/index.html')
@@ -34,7 +34,7 @@ it('Pasos user pws INVALIDO', ()=>{
 })
 
 
-it('Pasos user pws VALIDO', ()=>{
+it('user pws VALIDO', ()=>{
   cy.viewport(1400, 1100)
  
   cy.visit('https://demoblaze.com/index.html')

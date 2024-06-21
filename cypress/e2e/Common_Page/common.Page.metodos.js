@@ -1,0 +1,35 @@
+import { CommonPageData } from "./common.Page.data";
+import { CommonPageElementos } from "./common.Page.elemento";
+
+export class CommonPageMetodos{
+
+       static navegarEnMenus(){
+        cy.visit(CommonPageData.url);
+       }
+
+       static clickMenuHome(){
+        CommonPageElementos.topMenu.home.click();
+       }
+
+       static clickMenuContact(){
+        CommonPageElementos.topMenu.contact.click();
+       }
+
+       static clickMenuAboutUs(){
+        CommonPageElementos.topMenu.aboutUs.click();
+       }
+
+       static clickMenuCart(){
+        CommonPageElementos.topMenu.cart.click();
+       }
+
+       static clickMenuLogin(){
+        CommonPageElementos.topMenu.login.click();
+       }
+
+       static clickMenuSingUp(){
+        CommonPageElementos.topMenu.signUp.click();
+       }
+       
+
+}

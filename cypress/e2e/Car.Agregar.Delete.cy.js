@@ -6,9 +6,9 @@ import { CarritoElementos } from "./Carrito/carrito.elementos" //Se importa la c
 
 //ME QUEDO EN EL VIDEO 56 EN EL MINUTO 9:24 APENAS SE VA A CREAR ESTE ARCHIVO 
 
-describe('Seleccion de producto', () => {  
+describe('Seleccion de producto por nombre para borrar', () => {  
 
-        it('Seleccionamos un producto', ()=>{
+        it('Seleccionamos un producto por el nombre para borrar', ()=>{
         const uauario = 'random01'
         const pws     = 'ramdom02'
         

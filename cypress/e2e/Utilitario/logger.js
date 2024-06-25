@@ -1,7 +1,7 @@
 export class Logger{
     
     static NumerodePaso(numero){
-        const text = 'Step # ${numero}' 
+        const text = `Step # ${numero}` //con alt 96 se sacan las comillas
         // para que en el log se muestre el Step mas el número de paso
         cy.log(text)
         //para poner tambien en el reporte de allure
@@ -10,7 +10,7 @@ export class Logger{
 
 
     static step(descripcion){
-        const texto = 'Step - ${descripcion}'
+        const texto = `Step - ${descripcion}`
         // para que en el log se muestre la descripcion 
         cy.log(texto)
         //para poner tambien en el reporte de allure
@@ -19,7 +19,7 @@ export class Logger{
 
 
     static verificacion(descripcion){
-        const texto = 'Verificacion - ${descripcion}'
+        const texto = `Verificacion - ${descripcion}`
         // para que en el log se muestre la descripcion 
         cy.log(texto)
         //para poner tambien en el reporte de allure
@@ -29,7 +29,7 @@ export class Logger{
 
 
     static subStep(descripcion){
-        const texto = 'SubStep - ${descripcion}'
+        const texto = `SubStep - ${descripcion}`
         // para que en el log se muestre la descripcion 
         cy.log(texto)
         //para poner tambien en el reporte de allure
@@ -39,7 +39,7 @@ export class Logger{
 
 
     static subVerificacion(descripcion){
-        const texto = 'SubVerificacion - ${descripcion}'
+        const texto = `SubVerificacion - ${descripcion}`
         // para que en el log se muestre la descripcion 
         cy.log(texto)
         //para poner tambien en el reporte de allure

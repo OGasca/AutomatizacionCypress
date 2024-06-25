@@ -3,8 +3,6 @@ import { Logger } from "./Utilitario/logger";
 
 
 
-//ME QUEDO EN EL VIDEO 56 EN EL MINUTO 9:24 APENAS SE VA A CREAR ESTE ARCHIVO 
-
 describe('pasos', () => {  
 
         it('Pasos', ()=>{
@@ -22,18 +20,16 @@ describe('pasos', () => {
         
         
         Logger.NumerodePaso(3)
-        Logger.step('Logearse con usuario y contrasena:  "${usuario}/${pws}"') 
+        Logger.step(`Logearse con usuario y contrasena:  "${usuario}/${pws}"`) 
         LoginMetod.login(usuario, pws) 
 
 
-        Logger.verificacion('El home deberia mostrar "Welcome ${usuario}" text') 
+        Logger.verificacion(`El home deberia mostrar "Welcome ${usuario}" text`) 
         cy.get('a#nameofuser').should('contain.text', usuario)         
 
 
 
         })
-
-
 
 
 })//final

@@ -1,3 +1,4 @@
+import { Logger } from "../Utilitario/logger";
 import { LoginElementos } from "./Login.elementos";
 
 export class LoginMetod{
@@ -17,10 +18,16 @@ export class LoginMetod{
 
     // Se crea este método donde estan el usuario el pws y el click juntos para que solo al llamar al metodo haga los 3 pasos
     static login(username, password){
+        
+        Logger.subStep('Insertar usuario')
         cy.wait(3000)
         this.inserUsuario(username)
+
+        Logger.subStep('Insertar pws')
         cy.wait(3000)
         this.insetPws(password)
+
+        Logger.subStep('Click en boton login')
         cy.wait(3000)
         this.clickOnLoginbutton()
     }

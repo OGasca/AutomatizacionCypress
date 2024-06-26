@@ -1,3 +1,4 @@
+import { CommonPageMetodos } from "../Common_Page/common.Page.metodos";
 import { Logger } from "../Utilitario/logger";
 import { LoginElementos } from "./Login.elementos";
 
@@ -31,6 +32,21 @@ export class LoginMetod{
         cy.wait(3000)
         this.clickOnLoginbutton()
     }
+
+
+
+     static verificaMensajePwsErroneo(){
+       
+         CommonPageMetodos.verifyAlert('Wrong password.')
+
+     }
+
+
+
+
+
+
+
 
 
 

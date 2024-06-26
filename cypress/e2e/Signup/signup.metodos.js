@@ -28,4 +28,12 @@ export class SignupMetodos{
 
     }
 
+    
+    static verificamsgelusuarioyaExisteSeMuestre(){
+
+        CommonPageMetodos.verifyAlert("This user already exist.")
+
+    }
+
+
 }

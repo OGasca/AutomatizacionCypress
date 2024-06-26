@@ -1,5 +1,6 @@
 import { CommonPageData } from "../Common_Page/common.Page.data"
 import { CommonPageMetodos } from "../Common_Page/common.Page.metodos";
+import { LoginData } from "../Login/Login.data";
 import { SignupMetodos } from "../Signup/signup.metodos";
 import { Logger } from "../Utilitario/logger";
 
@@ -7,7 +8,7 @@ import { Logger } from "../Utilitario/logger";
 const usuarioAleatorio = CommonPageMetodos.generaRandomString();
                                                          //le mandamos 7 para que el pws se genere con solo 7 caracteres
 const pwsAleatorio = CommonPageMetodos.generaRandomString(7)
-const usuarioExistente = 'random01'
+const usuarioExistente = LoginData.UsuarioValido.usuariovalido 
 
 describe(CommonPageData.testSuites.registro, ()=>{
      

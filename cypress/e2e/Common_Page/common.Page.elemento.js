@@ -29,4 +29,10 @@ export class CommonPageElementos{
 
       }
 
+
+      static get bienvenidoUsuario(){
+            return cy.get('a#nameofuser')          
+
+      }
+
 }// final

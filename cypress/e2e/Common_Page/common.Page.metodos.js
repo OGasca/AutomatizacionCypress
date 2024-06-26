@@ -41,7 +41,7 @@ export class CommonPageMetodos{
 
        }
 
- 
+        //Genera un usuario aleatorio        
                                 //longitud de 10 caracteres 
        static generaRandomString(length=10) {
               let result = '';
@@ -55,6 +55,11 @@ export class CommonPageMetodos{
               }
               return result;
           }
-       
+
+
+        static verificaUserLogeado(username){
+              CommonPageElementos.bienvenidoUsuario.should("have.text", `Welcome ${username}`);
+    }
+          
 
 }

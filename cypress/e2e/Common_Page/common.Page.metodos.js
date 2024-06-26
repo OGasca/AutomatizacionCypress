@@ -37,10 +37,24 @@ export class CommonPageMetodos{
 
               cy.on('window:alert', (str) => {
               expect(str).to.equal(expecteMessage)
-         })
-
+         });
 
        }
+
+ 
+                                //longitud de 10 caracteres 
+       static generaRandomString(length=10) {
+              let result = '';
+                                 //se ingresan los caracteres que se van a usar para generar la string random
+              const characters = 'abcdefghijklmnopqrstuvwxyz0123456789';
+              const charactersLength = characters.length;
+              let counter = 0;
+              while (counter < length) {
+                result += characters.charAt(Math.floor(Math.random() * charactersLength));
+                counter += 1;
+              }
+              return result;
+          }
        
 
 }

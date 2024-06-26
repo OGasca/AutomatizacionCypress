@@ -3,6 +3,12 @@ import { CommonPageMetodos } from "../Common_Page/common.Page.metodos";
 import { SignupMetodos } from "../Signup/signup.metodos";
 import { Logger } from "../Utilitario/logger";
 
+                                                           //los parentesis lo dejamos vacio para que tome los 10 caracteres
+const usuarioAleatorio = CommonPageMetodos.generaRandomString();
+                                                         //le mandamos 7 para que el pws se genere con solo 7 caracteres
+const pwsAleatorio = CommonPageMetodos.generaRandomString(7)
+
+
 describe(CommonPageData.testSuites.resgistroYAutenticacion, ()=>{
      
        it("Registro de usuario válido", ()=>{
@@ -16,8 +22,8 @@ describe(CommonPageData.testSuites.resgistroYAutenticacion, ()=>{
 
               Logger.NumerodePaso(3)
               Logger.step('Completar todos los campos obligatorios con informacion válida.') 
-              SignupMetodos.insertUsuario('userinvalido234')
-              SignupMetodos.InserContrasena('134jk')
+              SignupMetodos.insertUsuario(usuarioAleatorio)
+              SignupMetodos.InserContrasena(pwsAleatorio)
 
               Logger.NumerodePaso(4)
               Logger.step('Hacer clic en "Sing up" para registrar el usuario.') 

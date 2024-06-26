@@ -1,1 +1,1 @@
-{"total":2,"items":[{"uid":"c52d6ea48854d5dac0cfd471a002c52f","name":"pasos","statistic":{"failed":0,"broken":0,"skipped":0,"passed":1,"unknown":0,"total":1}},{"uid":"e0c81982a5e48a6bb94bbf139a4eafa9","name":"Registro y Autenticación","statistic":{"failed":0,"broken":0,"skipped":0,"passed":1,"unknown":0,"total":1}}]}
+{"total":1,"items":[{"uid":"e0c81982a5e48a6bb94bbf139a4eafa9","name":"Registro y Autenticación","statistic":{"failed":1,"broken":0,"skipped":0,"passed":0,"unknown":0,"total":1}}]}

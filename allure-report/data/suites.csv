@@ -1,3 +1,2 @@
 "Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
-"passed","Tue Jun 25 09:43:02 CST 2024","Tue Jun 25 09:43:15 CST 2024","12580","","pasos","","","","Pasos",""
-"passed","Tue Jun 25 09:43:24 CST 2024","Tue Jun 25 09:43:25 CST 2024","486","","Registro y Autenticación","","","","Registro de usuario válido",""
+"failed","Tue Jun 25 18:45:16 CST 2024","Tue Jun 25 18:45:19 CST 2024","2548","","Registro y Autenticación","","","","Registro de usuario válido",""

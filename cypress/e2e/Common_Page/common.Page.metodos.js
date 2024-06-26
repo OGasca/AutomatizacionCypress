@@ -4,6 +4,7 @@ import { CommonPageElementos } from "./common.Page.elemento";
 export class CommonPageMetodos{
 
        static navegarEnMenus(){
+        cy.clearCookies();      
         cy.visit(CommonPageData.url);
        }
 
@@ -29,6 +30,16 @@ export class CommonPageMetodos{
 
        static clickMenuSingUp(){
         CommonPageElementos.topMenu.signUp.click();
+       }
+       
+       //Metodo para verificar alertas
+       static verifyAlert(expecteMessage){
+
+              cy.on('window:alert', (str) => {
+              expect(str).to.equal(expecteMessage)
+         })
+
+
        }
        
 

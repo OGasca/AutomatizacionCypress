@@ -1,1 +1,1 @@
-[{"uid":"8a82324f86b0dbce","name":"Pasos","time":{"start":1719330182830,"stop":1719330195410,"duration":12580},"status":"passed","severity":"normal"},{"uid":"60c5995443ac5cc4","name":"Registro de usuario válido","time":{"start":1719330204782,"stop":1719330205268,"duration":486},"status":"passed","severity":"normal"}]
+[{"uid":"e26b424934c00cef","name":"Registro de usuario válido","time":{"start":1719362716593,"stop":1719362719141,"duration":2548},"status":"failed","severity":"normal"}]

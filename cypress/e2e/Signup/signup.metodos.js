@@ -1,3 +1,4 @@
+import { CommonPageMetodos } from "../Common_Page/common.Page.metodos";
 import { SignupElements } from "./signup.elements";
 
 export class SignupMetodos{
@@ -18,6 +19,13 @@ export class SignupMetodos{
            this.insertUsuario(usuarioo);
            this.InserContrasena(contrasena);
            this.clickOnSignUpButton();
+    }
+
+
+    static verifySignupSuccesfulMessageIsDisplayed(){
+
+        CommonPageMetodos.verifyAlert("Sign up successful.");
+
     }
 
 }

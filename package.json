@@ -12,7 +12,7 @@
     "limpiar-reporte": "rimraf ./allure-report && rimraf ./allure-results",
     "ejecutar-pruebas": "cypress run --headed --env allure=true",
     "generar-reporte": "allure generate allure-results -o allure-report --clean",
-    "test": "npm run limpiar-reporte && npm run ejecutar-pruebas && npm run generar-reporte && npm run abrir-report"
+    "test": "npm run limpiar-reporte && npm run ejecutar-pruebas &  npm run generar-reporte && npm run abrir-report" 
   },
   "keywords": [],
   "author": "",

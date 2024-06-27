@@ -19,6 +19,13 @@ export class HomeMetodos{
         HomeElementos.selectProducto(nombreProducto).click()
      }
 
+     //Verifica que un producto se este mostrando que este visible
+     static verifyProductosMostrados(nombreProducto){
+         HomeElementos.selectProducto(nombreProducto).should('be.visible')
+     }
+
+
+     
 
 
 }//final

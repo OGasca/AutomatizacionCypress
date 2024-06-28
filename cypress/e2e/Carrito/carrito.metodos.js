@@ -8,4 +8,9 @@ export class carritoMetodos{
         CarritoElementos.links.delete(nombreProducto).click();
     }
 
+     
+    static verificaProductoAgregadoAlCarrito(nombreProducto){
+        CarritoElementos.links.delete(nombreProducto).should('be.visible')
+    } 
+
 }

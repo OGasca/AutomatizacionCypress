@@ -4,7 +4,10 @@ import { CommonPageElementos } from "./common.Page.elemento";
 export class CommonPageMetodos{
 
        static navegarEnMenus(){
-        cy.clearCookies();      
+        //Limpiar las cookies
+        cy.clearAllCookies();
+        // borrar el almacenamiento local (localStorage) del navegador antes de cada prueba
+        cy.clearLocalStorage();  
         cy.visit(CommonPageData.url);
        }
 

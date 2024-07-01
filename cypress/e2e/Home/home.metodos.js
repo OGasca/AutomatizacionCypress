@@ -24,6 +24,12 @@ export class HomeMetodos{
          HomeElementos.selectProducto(nombreProducto).should('be.visible')
      }
 
+     static verificaMuetraPaginaHomePorLaURL(){
+      //para validar que se encuentra la página por la URL
+       cy.url().should('include', 'index.html')
+
+  }
+
 
      
 

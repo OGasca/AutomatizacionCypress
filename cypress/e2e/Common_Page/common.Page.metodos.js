@@ -20,9 +20,18 @@ export class CommonPageMetodos{
         CommonPageElementos.topMenu.aboutUs.click();
        }
 
+
        static clickMenuCart(){
         CommonPageElementos.topMenu.cart.click();
+
+        //Para controlar el error que no es propio de cypres es un error de la aplicación que se esta probando
+        Cypress.on('uncaught:exception', (err, runnable)=>{
+          return false
+        }) 
+
        }
+
+
 
        static clickMenuLogin(){
         CommonPageElementos.topMenu.login.click();

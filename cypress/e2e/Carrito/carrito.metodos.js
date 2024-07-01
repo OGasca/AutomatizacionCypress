@@ -13,4 +13,18 @@ export class carritoMetodos{
         CarritoElementos.links.delete(nombreProducto).should('be.visible')
     } 
 
+
+
+    static verificaMuetraPaginaCarritoPorLaURL(){
+        //para validar que se encuentra la página por la URL
+         cy.url().should('include', 'cart.html')
+
+    }
+
+
+    static clickEnBotonPleceOrder(){
+        CarritoElementos.buton.placeOrder.click();
+
+    }
+
 }

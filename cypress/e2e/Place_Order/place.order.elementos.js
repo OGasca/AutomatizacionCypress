@@ -16,7 +16,7 @@ export class PlaceOrderElementos{
             },
 
             get creditcard(){
-                 return cy.get('input#card')
+                 return cy.get('input#card')                      
             },
 
             get month(){
@@ -36,11 +36,11 @@ export class PlaceOrderElementos{
      static get botones(){
        return{
             get close(){
-                cy.get('div[id="orderModal"] button').eq(1);
+              return  cy.get('div[id="orderModal"] button').eq(1);
             },
 
             get purchase(){
-                cy.contains('button', 'Purchase');
+               return cy.contains('button', 'Purchase');
             },
 
        };      

@@ -39,18 +39,25 @@ export class carritoMetodos{
 
 
     static limpiarCarrito(nombreUsuario, pws){
+
          Logger.subStep('Navegar a la página')
          CommonPageMetodos.navegarEnMenus();
+
          Logger.subStep('Click en log out')
          CommonPageMetodos.logout();
+
          Logger.subStep('Click en el Home')
          CommonPageMetodos.clickMenuHome();
+
          Logger.subStep('Click en el menu Log in')
          CommonPageMetodos.clickMenuLogin();
+
          Logger.subStep('Ingresamos Usuario y pws')
          LoginMetod.login(nombreUsuario, pws)
+
          Logger.subStep('Click en el Cart')
          CommonPageMetodos.clickMenuCart()
+         
          Logger.subStep('Borramos lo que hay en el carrito')
          this.borrarProductos();
 

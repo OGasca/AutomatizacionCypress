@@ -25,6 +25,12 @@ export class CommonPageElementos{
                     return cy.get('a[data-target="#signInModal"]');
                 },
 
+                get logout(){
+                    return cy.get('#logout2');
+                },
+
+
+
             };
 
       }

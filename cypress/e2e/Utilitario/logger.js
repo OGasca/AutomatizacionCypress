@@ -47,4 +47,15 @@ export class Logger{
     }
 
 
+
+
+    static postCondicion(descripcion){
+        const texto = `PostCondicion - ${descripcion}`
+        // para que en el log se muestre la descripcion 
+        cy.log(texto)
+        //para poner tambien en el reporte de allure
+        cy.allure().step(texto) 
+    }
+
+
 }//final

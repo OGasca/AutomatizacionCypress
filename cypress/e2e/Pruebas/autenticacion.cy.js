@@ -31,6 +31,10 @@ describe(CommonPageData.testSuites.autenticacion, ()=>{
         CommonPageMetodos.verificaUserLogeado(LoginData.UsuarioValido.usuariovalido)
 
 
+        Logger.postCondicion('Log out')        
+        CommonPageMetodos.logout();
+        
+
 
      });
 
@@ -49,7 +53,7 @@ describe(CommonPageData.testSuites.autenticacion, ()=>{
 
       Logger.NumerodePaso(3)
       Logger.step('Ingresar un nombre de usuario y contraseña Inválidos')
-      LoginMetod.inserUsuario(LoginData.UsuarioValido.usuariovalido)
+      LoginMetod.inserUsuario(LoginData.UsuarioInvalido.username)
       LoginMetod.insetPws('contraseñainvalida')
       
      

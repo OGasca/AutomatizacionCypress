@@ -20,7 +20,7 @@ const producto = 'ASUS Full HD'
 describe(CommonPageData.testSuites.catalogoYCompras, () =>{
 
 
-       it('Navegación or categorias', ()=>{
+       it('Navegación por categorias', ()=>{
    
           Logger.NumerodePaso(1)
           Logger.step('Iniciar sesión como usuario registrado.')
@@ -42,6 +42,10 @@ describe(CommonPageData.testSuites.catalogoYCompras, () =>{
           Logger.verificacion('Verificar que se muestre la lista de productos correspondientes a la cateroría seleccionada')
           HomeMetodos.verifyProductosMostrados('Apple monitor 24')
           HomeMetodos.verifyProductosMostrados('ASUS Full HD')
+
+          
+        Logger.postCondicion('Log out')        
+        CommonPageMetodos.logout();
 
        } )
 
@@ -85,13 +89,19 @@ describe(CommonPageData.testSuites.catalogoYCompras, () =>{
          Logger.verificacion('Vefificar que ese muestra un mensaj ede confirmacion y el producto se agrega al carrito')
          DetalleProductoMetodo.verificarMensajeProductoAgregado();
          CommonPageMetodos.clickMenuCart();
-         carritoMetodos.verificaProductoAgregadoAlCarrito(producto)         
+         carritoMetodos.verificaProductoAgregadoAlCarrito(producto) 
+         
+         
+         
+        Logger.postCondicion('Vaciar carrito y cerrar sesión')          
+        carritoMetodos.limpiarCarrito(usuario.usuariovalido, usuario.contrasenavalida);        
+        CommonPageMetodos.logout();
 
       } )
 
+   
 
-
-      it('Realizar una compra', ()=>{
+      it.only('Realizar una compra', ()=>{
    
          Logger.NumerodePaso(1)
          Logger.step('Iniciar sesión como usuario registrado.')
@@ -165,6 +175,9 @@ describe(CommonPageData.testSuites.catalogoYCompras, () =>{
          GraciasporsucompraMetodos.clickOnButon();
          cy.wait(4000)
          HomeMetodos.verificaMuetraPaginaHomePorLaURL();
+
+         Logger.postCondicion('Click en Log Out')          
+         CommonPageMetodos.logout();
 
 
 

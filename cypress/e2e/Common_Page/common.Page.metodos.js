@@ -79,8 +79,8 @@ export class CommonPageMetodos{
         static logout(){
           cy.get('body').then($body=>{
             //si encuentra el link de logout entonces da click en Logout
-            if($body.find('#logout2').length>0){
-              CommonPageElementos.topMenu.logout.click();
+            if($body.find('#logout2[style="display: block;"]').length>0){
+              CommonPageElementos.topMenu.logout.click({force: true});
             }              
 
           })

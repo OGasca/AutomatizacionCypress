@@ -21,15 +21,15 @@ export class LoginMetod{
     static login(username, password){
         
         Logger.subStep('Insertar usuario')
-        cy.wait(3000)
+        
         this.inserUsuario(username)
 
         Logger.subStep('Insertar pws')
-        cy.wait(3000)
+        
         this.insetPws(password)
 
         Logger.subStep('Click en boton login')
-        cy.wait(3000)
+        cy.wait(2000)
         this.clickOnLoginbutton()
     }
 

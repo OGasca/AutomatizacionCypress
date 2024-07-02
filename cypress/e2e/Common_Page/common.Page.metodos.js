@@ -9,6 +9,7 @@ export class CommonPageMetodos{
         // borrar el almacenamiento local (localStorage) del navegador antes de cada prueba
         cy.clearLocalStorage();  
         cy.visit(CommonPageData.url);
+        CommonPageMetodos.clickMenuHome();
        }
 
        static clickMenuHome(){
